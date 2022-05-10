@@ -24,6 +24,10 @@ flex-shrink is similar to flex-grow, but sets the “shrink factor” of a flex 
 flex-shrink only ends up being applied if the size of all flex items is larger than their parent container.
 if we don't want an item to shrink then we define flex-shrink: 0;
 
+flex-basics
+flex-basis simply sets the initial size of a flex item, so any sort of flex-growing or flex-shrinking starts from that baseline size. 
+The shorthand value defaults to flex-basis: 0%. 
+
 Important note about flex-basis:
 There is a difference between the default value of flex-basis and the way the flex shorthand defines it if no flex-basis is given. 
 The actual default value for flex-basis is auto, but when you specify flex: 1 on an element, 
