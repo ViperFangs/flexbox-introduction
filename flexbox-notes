@@ -1,0 +1,16 @@
+There are 3 properties defined by flex.
+
+flex is a shorthand for flex-grow, flex-shrink and flex-basis.
+e.g. 
+    div{
+        flex: 0 1 0%;
+    }
+
+The first 0 is flex-grow
+The 1 is flex-shrink and
+0% is the flex basis and these are also the default values
+
+we generally see flex be defined with one value e.g. flex: 1;
+in that case we are actually declaring it as flex: 1 1 0%; 
+as 1 is the default for flex-shrink and 0% is the default for flex basics.
+
