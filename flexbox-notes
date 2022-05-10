@@ -61,3 +61,15 @@ We could also have fixed it by putting a height on the parent .flex-container,
 or by using flex-grow: 1 instead of the shorthand.
 >
 
+justify-content is a property applied to the container of the flex box to align items across the main axis(or x axis)
+common values for the property are center, space-between
+
+align-items is a property applied to the container of the flex box to align items across the cross axis(or y axis)
+
+Because justify-content and align-items are based on the main and cross axis of your container, 
+their behavior changes when you change the flex-direction of a flex-container. 
+e.g. When you change flex-direction to column, justify-content aligns vertically and align-items aligns horizontally.
+
+Setting gap on a flex container simply adds a specified space between flex items, very similar to adding a margin to the items themselves.
+e.g. gap: 8px;
+
