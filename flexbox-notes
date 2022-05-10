@@ -34,3 +34,27 @@ The actual default value for flex-basis is auto, but when you specify flex: 1 on
 it interprets that as flex: 1 1 0. If you want to only adjust an item’s flex-grow you can simply do so directly, 
 without the shorthand, or you can be more verbose and use the full 3 value shorthand flex: 1 1 auto.
 You could also use the predefined value flex: auto, which is equivalent to flex: 1 1 auto
+
+The default direction for a flex container is horizontal, or row, but you can change the direction to vertical, or column
+by using flex-direction: row; 
+or
+flex-direction:column;
+
+a flex-box has 2 Axes, like x and y in our graph
+
+Another detail to notice: when we change the flex-direction to column, 
+flex-basis refers to height instead of width.
+
+Info from The Odin project
+<One thing to note is that in this example, flex-direction: column would not work as expected if we used the shorthand flex: 1. 
+Can you figure out why it does not work if flex: 1 is used? The divs collapse, even though they clearly have a height defined there.
+
+The reason for this is that the flex shorthand expands flex-basis to 0, 
+which means that all flex-growing and flex-shrinking would begin their calculations from 0. 
+Empty divs by default have 0 height, so for our flex items to fill up the height of their container, 
+they don’t actually need to have any height at all.
+
+The example above fixed this by specifying flex: 1 1 auto, 
+telling the flex items to default to their given height. 
+We could also have fixed it by putting a height on the parent .flex-container, 
+or by using flex-grow: 1 instead of the shorthand.>
