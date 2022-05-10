@@ -46,7 +46,8 @@ Another detail to notice: when we change the flex-direction to column,
 flex-basis refers to height instead of width.
 
 Info from The Odin project
-<One thing to note is that in this example, flex-direction: column would not work as expected if we used the shorthand flex: 1. 
+<
+One thing to note is that in this example, flex-direction: column would not work as expected if we used the shorthand flex: 1. 
 Can you figure out why it does not work if flex: 1 is used? The divs collapse, even though they clearly have a height defined there.
 
 The reason for this is that the flex shorthand expands flex-basis to 0, 
@@ -57,4 +58,6 @@ they don’t actually need to have any height at all.
 The example above fixed this by specifying flex: 1 1 auto, 
 telling the flex items to default to their given height. 
 We could also have fixed it by putting a height on the parent .flex-container, 
-or by using flex-grow: 1 instead of the shorthand.>
+or by using flex-grow: 1 instead of the shorthand.
+>
+
